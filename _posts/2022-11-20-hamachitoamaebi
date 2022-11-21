@@ -2,7 +2,7 @@
 title:  "Redirect to example.com as a show of how this works"
 date:   1900-01-01 08:00:00 -0700
 layout: links
-redirect: "https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.instagram.com/hamachitoamaebi/"
+redirect: "https://www.instagram.com/hamachitoamaebi/"
 wait: 5
 ---
 
