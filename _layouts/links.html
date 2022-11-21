@@ -3,9 +3,25 @@
 <title>Redirecting to {{content}}</title>
 <meta http-equiv="refresh" content="{{page.wait}}; URL={{page.redirect}}">
 <link rel="canonical" href="{{page.redirect}}">
-
+<head>
+  <script defer="defer" src="/l/assets/js/webapp.js"></script>
+  <link href="/l/assets/css/webapp.css" rel="stylesheet">
+</head>
 <body>
   <p>Redirecting to {{page.redirect}} in {{page.wait}} seconds...</p>
   <hr />
+  <div id="root"></div>
+
+<script>
+  const root = ReactDOM.createRoot(
+    document.getElementById('root') as HTMLElement
+  );
+  root.render(
+    <React.StrictMode>
+      <App />
+      <div id="someotherdiv" />
+    </React.StrictMode>
+  );
+</script>
   {{content}}
 </body>
