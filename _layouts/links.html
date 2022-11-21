@@ -10,18 +10,17 @@
 <body>
   <p>Redirecting to {{page.redirect}} in {{page.wait}} seconds...</p>
   <hr />
-  <div id="root"></div>
-
-<script>
-  const root = ReactDOM.createRoot(
-    document.getElementById('root') as HTMLElement
-  );
-  root.render(
-    <React.StrictMode>
-      <App />
-      <div id="someotherdiv" />
-    </React.StrictMode>
-  );
-</script>
   {{content}}
+  <div id="root"></div>
+  <script>
+    const root = ReactDOM.createRoot(
+      document.getElementById('root') as HTMLElement
+    );
+    root.render(
+      <React.StrictMode>
+        <App />
+        <div id="someotherdiv" />
+      </React.StrictMode>
+    );
+  </script>
 </body>
