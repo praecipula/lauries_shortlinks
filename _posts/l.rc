@@ -1,0 +1,4 @@
+function make_link {
+  SHORTLINK=$1
+  cp template.md $(date +%Y-%m-%d)-$SHORTLINK.md
+}
