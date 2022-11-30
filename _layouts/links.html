@@ -17,10 +17,12 @@
   <link href="/assets/css/webapp.css" rel="stylesheet">
 </head>
 <body>
-  <p>Redirecting to {{page.redirect}} in {{page.wait}} seconds...</p>
+  <p>Redirecting to <a href="{{page.redirect}}">{{page.redirect}}</a> in <em>{{page.wait}}</em> seconds...</p>
   <hr />
   {{content}}
-  <div id="root"></div>
+  <a href="{{page.redirect}}">
+    <div id="root"></div>
+  </a>
   <script>
     const root = ReactDOM.createRoot(
       document.getElementById('root') as HTMLElement
@@ -32,4 +34,5 @@
       </React.StrictMode>
     );
   </script>
+
 </body>
