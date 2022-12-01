@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Links for collection get</title>
+<head>
+<body>
+  {%- assign all_non_index = site.get | where_exp:"item","item.title != 'Index'" %}
+  {% for get_item in all_non_index | sort: 'title' %}
+  <h2>
+    <a href="{{ get_item.url }}">{{get_item.title}}</a>
+  </h2>
+  {% endfor %}
+</body>

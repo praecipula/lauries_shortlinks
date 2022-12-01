@@ -29,6 +29,11 @@ plugins:
 exclude:
   - webapp
 
+collections:
+  get:
+    output: true
+    permalink: /:collection/:name
+
 permalink: none
 
 # Exclude from processing.
