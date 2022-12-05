@@ -23,10 +23,9 @@ jobs:
           cache: 'pipenv'
       - name: Install pipenv
         run: pip install pipenv
-      - name: Enter pipenv shell
+      - name: Install deps
         run: |
-          pipenv shell --three
-          pip install
+          pipenv install
       - name: List files in the scripts directory and run sequentially from home dir using abspath.
         run: |
           JOBS=$(find ${{ github.workspace }}/runners/daily -name "*.sh" -o -name "*.py" -not -iname "_*" -executable | sort)
