@@ -28,10 +28,10 @@ jobs:
           pipenv install
       - name: List files in the scripts directory and run sequentially from home dir using abspath.
         run: |
-          JOBS=$(find ${{ github.workspace }}/runners/daily -name "*.sh" -o -name "*.py" -not -iname "_*" -executable | sort)
+          JOBS=$(find ${{ github.workspace }}/runners/daily -name "*.py" -not -iname "_*" -executable | sort)
           echo $JOBS
           for J in $JOBS; do
             echo "RUNNNING $J";
-            pushd ${{ github.workspace }}; $J; popd
+            pushd ${{ github.workspace }}; pipenv run $J; popd
           done
       - run: echo "🍏 This job's status is ${{ job.status }}."
