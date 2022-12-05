@@ -17,5 +17,8 @@ jobs:
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
       - name: List files in the scripts directory
         run: |
-          ls ${{ github.workspace }}/runners/daily
+          JOBS=$(find ${{ github.workspace }}/runners/daily -name "*.sh" -not -iname "_*" -executable | sort); echo $JOBS
+      - name: Run each file sequentially. The runs happen in the root dir as pwd.
+        run: |
+          for J in $JOBS; do print "RUNNNING $J"; $($J); done
       - run: echo "🍏 This job's status is ${{ job.status }}."
