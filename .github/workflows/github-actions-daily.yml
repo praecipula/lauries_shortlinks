@@ -36,7 +36,7 @@ jobs:
           done
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Git commit new dailies.json after run
-      run: |
+      - run: |
         git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
         git config --global user.email "praecipula@users.noreply.github.com"
         git commit -a -m "Auto commit of dailies.json from github actions"
