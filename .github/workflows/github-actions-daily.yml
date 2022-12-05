@@ -15,12 +15,19 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-      - name: List files in the scripts directory and run sequentially with abspath
+        Option 1
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.7
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3
+          cache: 'pipenv'
+      - name: List files in the scripts directory and run sequentially from home dir using abspath.
         run: |
-          JOBS=$(find ${{ github.workspace }}/runners/daily -name "*.sh" -not -iname "_*" -executable | sort)
+          JOBS=$(find ${{ github.workspace }}/runners/daily -name "*.sh" -o -name "*.py" -not -iname "_*" -executable | sort)
           echo $JOBS
           for J in $JOBS; do
             echo "RUNNNING $J";
-            $J;
+            pushd ${{ github.workspace }}; $J; popd
           done
       - run: echo "🍏 This job's status is ${{ job.status }}."
