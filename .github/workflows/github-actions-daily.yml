@@ -3,6 +3,7 @@ run-name: ${{ github.actor }} is triggering all daily scripts
 on: 
   schedule:
     - cron: 30 2 * * *
+  workflow_dispatch:
 jobs:
   run-scripts:
     runs-on: ubuntu-latest
