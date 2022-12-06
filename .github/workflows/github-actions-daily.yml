@@ -2,7 +2,8 @@ name: /l Daily Runs
 run-name: ${{ github.actor }} is triggering all daily scripts
 on: 
   schedule:
-    - cron: 30 2 * * *
+    # 12:30 in UTC is 4:30 AM in PST
+    - cron: 30 12 * * *
   workflow_dispatch:
 jobs:
   run-scripts:

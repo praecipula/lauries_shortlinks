@@ -18,14 +18,12 @@ class Persist:
         script_run_data = self.db().search(query.script == self._dbname)
         if len(script_run_data) > self._keep_runs:
             script_run_data.sort(key=lambda d: d['time'])
-            print(script_run_data)
             overruns = list(map(lambda d:d.doc_id, script_run_data[:-self._keep_runs]))
-            print(f"Truncating {overruns}")
+            print(f"Truncating runs with ids: {overruns}")
             self.db().remove(doc_ids=overruns)
-            
         self.db().close()
 
-    def add_db_run(self):
-        run_data = {'script': self._dbname, 'time':datetime.datetime.today().isoformat()}
+    def add_db_run(self, data_to_store=None):
+        run_data = {'script': self._dbname, 'time':datetime.datetime.now(datetime.timezone.utc).isoformat(), "data":data_to_store}
         self.db().insert(run_data)
 
