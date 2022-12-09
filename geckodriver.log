@@ -427,3 +427,20 @@ DevTools listening on ws://localhost:65513/devtools/browser/e6759bec-0297-43ed-a
 Read port: 65528
 1670552571982	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 1670552588660	Marionette	INFO	Stopped listening on port 65528
+1670553382467	geckodriver	INFO	Listening on 127.0.0.1:45729
+1670553382712	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "--remote-debugging-port" "39829" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile86k3Xi"
+*** You are running in headless mode.
+[GFX1-]: glxtest: Unable to open a connection to the X server
+1670553388228	Marionette	INFO	Marionette enabled
+1670553388263	Marionette	INFO	Listening on port 42551
+Read port: 42551
+Read port: 42551
+WebDriver BiDi listening on ws://127.0.0.1:39829
+1670553389533	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile86k3Xi/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:39829/devtools/browser/2f2685c5-84b3-4cec-a61b-77f0a07e21c9
+JavaScript error: https://a.pub.network/core/prebid-analytics-7.19.5.js, line 5: TypeError: g.error is not a function
+JavaScript error: https://a.pub.network/core/prebid-analytics-7.19.5.js, line 5: TypeError: g.error is not a function
+1670553417279	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1670553419241	Marionette	INFO	Stopped listening on port 42551
