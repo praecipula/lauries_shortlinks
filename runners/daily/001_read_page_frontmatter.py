@@ -10,7 +10,7 @@ import yaml
 
 Pst = persist.Persist("read_page_frontmatter")
 
-markdown_dir_to_search = ["_get", "_posts"]
+markdown_dir_to_search = ["_get", "_posts", "_short"]
 markdown_files = []
 for d in markdown_dir_to_search:
     markdown_files.extend(glob.glob(f"{d}/*.md", recursive=True))

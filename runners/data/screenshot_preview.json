@@ -1,0 +1,50 @@
+{
+  "_default": {
+    "1": {
+      "data": [
+        {
+          "image": "page_cache/example.comL3BhdGg=.png",
+          "page": "http://example.com/path"
+        },
+        {
+          "image": "page_cache/food52.comL3JlY2lwZXMvMzkxOTMtZGVlcC1kaXNoLWNoaWNrZW4tcG90LXBpZQ==.png",
+          "page": "https://food52.com/recipes/39193-deep-dish-chicken-pot-pie"
+        },
+        {
+          "image": "page_cache/food52.comL3JlY2lwZXMvMzkxOTMtZGVlcC1kaXNoLWNoaWNrZW4tcG90LXBpZQ==.png",
+          "page": "https://food52.com/recipes/39193-deep-dish-chicken-pot-pie"
+        },
+        {
+          "image": "page_cache/food52.comL3JlY2lwZXMvMzkxOTMtZGVlcC1kaXNoLWNoaWNrZW4tcG90LXBpZQ==.png",
+          "page": "https://food52.com/recipes/39193-deep-dish-chicken-pot-pie"
+        },
+        {
+          "image": "page_cache/food52.comL3JlY2lwZXMvMzkxOTMtZGVlcC1kaXNoLWNoaWNrZW4tcG90LXBpZQ==.png",
+          "page": "https://food52.com/recipes/39193-deep-dish-chicken-pot-pie"
+        },
+        {
+          "image": "page_cache/food52.comL3JlY2lwZXMvMzkxOTMtZGVlcC1kaXNoLWNoaWNrZW4tcG90LXBpZQ==.png",
+          "page": "https://food52.com/recipes/39193-deep-dish-chicken-pot-pie"
+        },
+        {
+          "image": "page_cache/food52.comL3JlY2lwZXMvMzkxOTMtZGVlcC1kaXNoLWNoaWNrZW4tcG90LXBpZQ==.png",
+          "page": "https://food52.com/recipes/39193-deep-dish-chicken-pot-pie"
+        },
+        {
+          "image": "page_cache/food52.comL3JlY2lwZXMvMzkxOTMtZGVlcC1kaXNoLWNoaWNrZW4tcG90LXBpZQ==.png",
+          "page": "https://food52.com/recipes/39193-deep-dish-chicken-pot-pie"
+        },
+        {
+          "image": "page_cache/food52.comL3JlY2lwZXMvMzkxOTMtZGVlcC1kaXNoLWNoaWNrZW4tcG90LXBpZQ==.png",
+          "page": "https://food52.com/recipes/39193-deep-dish-chicken-pot-pie"
+        },
+        {
+          "image": "page_cache/www.bbc.co.ukL2Zvb2QvcmVjaXBlcy9jaGVhdHNfcm91Z2hfcHVmZl9wYXN0cnlfOTE1NDk=.png",
+          "page": "https://www.bbc.co.uk/food/recipes/cheats_rough_puff_pastry_91549"
+        }
+      ],
+      "script": "screenshot_preview",
+      "time": "2022-12-09T02:23:09.175155+00:00"
+    }
+  }
+}
