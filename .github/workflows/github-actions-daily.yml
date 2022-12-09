@@ -40,5 +40,6 @@ jobs:
         run: |
           git config --global user.name "Matt Bramlage"
           git config --global user.email "praecipula@users.noreply.github.com"
+          git add page_cache
           git commit -a -m "Auto commit of dailies.json from github actions"
           git push
