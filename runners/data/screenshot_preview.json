@@ -183,6 +183,52 @@
       ],
       "script": "screenshot_preview",
       "time": "2022-12-09T12:57:29.640092+00:00"
+    },
+    "5": {
+      "data": [
+        {
+          "image": "page_cache/example.comL3BhdGg=.png",
+          "page": "http://example.com/path"
+        },
+        {
+          "image": "page_cache/food52.comL3JlY2lwZXMvMzkxOTMtZGVlcC1kaXNoLWNoaWNrZW4tcG90LXBpZQ==.png",
+          "page": "https://food52.com/recipes/39193-deep-dish-chicken-pot-pie"
+        },
+        {
+          "image": "page_cache/food52.comL3JlY2lwZXMvMzkxOTMtZGVlcC1kaXNoLWNoaWNrZW4tcG90LXBpZQ==.png",
+          "page": "https://food52.com/recipes/39193-deep-dish-chicken-pot-pie"
+        },
+        {
+          "image": "page_cache/food52.comL3JlY2lwZXMvMzkxOTMtZGVlcC1kaXNoLWNoaWNrZW4tcG90LXBpZQ==.png",
+          "page": "https://food52.com/recipes/39193-deep-dish-chicken-pot-pie"
+        },
+        {
+          "image": "page_cache/food52.comL3JlY2lwZXMvMzkxOTMtZGVlcC1kaXNoLWNoaWNrZW4tcG90LXBpZQ==.png",
+          "page": "https://food52.com/recipes/39193-deep-dish-chicken-pot-pie"
+        },
+        {
+          "image": "page_cache/www.bbc.co.ukL2Zvb2QvcmVjaXBlcy9jaGVhdHNfcm91Z2hfcHVmZl9wYXN0cnlfOTE1NDk=.png",
+          "page": "https://www.bbc.co.uk/food/recipes/cheats_rough_puff_pastry_91549"
+        },
+        {
+          "image": "page_cache/oksdeli.comL2x1bmNo.png",
+          "page": "https://oksdeli.com/lunch"
+        },
+        {
+          "image": "page_cache/food52.comL3JlY2lwZXMvMzkxOTMtZGVlcC1kaXNoLWNoaWNrZW4tcG90LXBpZQ==.png",
+          "page": "https://food52.com/recipes/39193-deep-dish-chicken-pot-pie"
+        },
+        {
+          "image": "page_cache/food52.comL3JlY2lwZXMvMzkxOTMtZGVlcC1kaXNoLWNoaWNrZW4tcG90LXBpZQ==.png",
+          "page": "https://food52.com/recipes/39193-deep-dish-chicken-pot-pie"
+        },
+        {
+          "image": "page_cache/food52.comL3JlY2lwZXMvMzkxOTMtZGVlcC1kaXNoLWNoaWNrZW4tcG90LXBpZQ==.png",
+          "page": "https://food52.com/recipes/39193-deep-dish-chicken-pot-pie"
+        }
+      ],
+      "script": "screenshot_preview",
+      "time": "2022-12-10T12:55:01.253659+00:00"
     }
   }
 }
