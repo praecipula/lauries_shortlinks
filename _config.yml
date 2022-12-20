@@ -38,6 +38,10 @@ collections:
     output: true
     permalink: /:name
 
+  themed_collection:
+    output: true
+    permalink: /th/:name
+
 permalink: none
 
 # Exclude from processing.

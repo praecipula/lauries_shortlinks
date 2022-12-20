@@ -20,6 +20,10 @@
   <p>Redirecting to <a href="{{page.redirect}}">{{page.redirect}}</a> in <em>{{page.wait}}</em> seconds...</p>
   <hr />
   {{content}}
+  <hr />
+  {% if page.maps_navigate %}
+    <a href={{"https://www.google.com/maps/dir/?api=1&destination=" | append: page.maps_navigate | replace: " ", "+" | replace: ",", "%2C"}} />Navigate to {{page.maps_navigate}}</a>
+  {% endif %}
   <a href="{{page.redirect}}">
     <div id="root"></div>
   </a>

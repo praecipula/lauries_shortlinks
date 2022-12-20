@@ -1,5 +1,5 @@
 ---
 permalink: /get/index.html
-layout: link_collection
+layout: get_collection
 ---
 
