@@ -5,4 +5,7 @@ layout: links
 redirect: "/th/wifi"
 wait: 300
 ---
+
+yy%s#r7%+#26
+
 ![Wifi password](/assets/img/IMG_3328.jpg)
