@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 
+# It's a bit deceptive that this is done daily; rather, it's only really doing the majority of its work
+# once a week to save time and commit history space.
+# However, I'd like it to _respond_ within the first day, so if the screenshot doesn't
+# exist yet it will still create it.
+
 import sys
+import os
 import glom
 sys.path.append('./runners/lib')
 import persist
@@ -30,6 +36,17 @@ def front_matter_filter(page):
         return False
     return offline_cache
 
+def do_update(page_path):
+    # Returns true if no file exists or it's a sunday.
+    if (not os.path.exists(page_path)):
+        print("Updating because it does not exist yet.")
+        return True
+    if (datetime.datetime.now().weekday() == 6): # Sunday
+        print("Updating because it's Sunday.")
+        return True
+    print("Not updating.")
+    return False
+
 
 matching_front_matter_pages = filter(front_matter_filter, last_run_data)
 
@@ -44,13 +61,16 @@ for page in matching_front_matter_pages:
     print(redirect_page)
     page_screenshot_data['page'] = redirect_page
     url = urlparse(redirect_page)
-    browser.get(redirect_page)
     timestamp = datetime.datetime.now(datetime.timezone.utc).isoformat()
     fs_safe_path = base64.b64encode(url.path.encode('utf-8')).decode('utf-8', 'strict')
     screenshot_path = f"page_cache/{url.netloc}{fs_safe_path}.png"
-    page_screenshot_data['image'] = screenshot_path
+    if do_update(screenshot_path):
+        browser.get(redirect_page)
+        page_screenshot_data['image'] = screenshot_path
+        browser.save_screenshot(screenshot_path)
+    else:
+        page_screenshot_data['pass_until_routine_refresh'] = True
     screenshot_run_data.append(page_screenshot_data)
-    browser.save_screenshot(screenshot_path)
 
 browser.close()
 Pst.add_db_run(screenshot_run_data)
