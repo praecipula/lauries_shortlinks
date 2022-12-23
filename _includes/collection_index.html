@@ -1,0 +1,9 @@
+{{content}}
+{% comment %} Strip out the Index item, as we're rendering the Index now and don't want to re-list it. {% endcomment %}
+{%- assign collection_items = all_collection_items | where_exp:"item","item.title != 'Index'" %}
+
+{% for collection_item in collection_items | sort: 'title' %}
+  <h2>
+    <a href="{{ collection_item.url }}">{{collection_item.title}}</a>
+  </h2>
+{% endfor %}

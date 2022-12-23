@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>Links for collection get</title>
+<title>Links for collection themed</title>
 <head>
 <body>
-  {{content}}
-  {%- assign all_non_index = site.themed_collection | where_exp:"item","item.title != 'Index'" %}
-  {% for theme_item in all_non_index | sort: 'title' %}
-  <h2>
-    <a href="{{ theme_item.url }}">{{theme_item.title}}</a>
-  </h2>
-  {% endfor %}
+  {% comment %} Rename the site.[COLLECTION_NAME] to the correct one and then render {% endcomment %}
+  {%- assign all_collection_items = site.themed_collection %}
+  {%- assign collection_items = all_collection_items | where_exp:"item","item.title != 'Index'" %}
+  {% include collection_index.html %}
 </body>
