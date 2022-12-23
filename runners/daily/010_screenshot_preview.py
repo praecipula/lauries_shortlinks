@@ -63,7 +63,7 @@ for page in matching_front_matter_pages:
     url = urlparse(redirect_page)
     timestamp = datetime.datetime.now(datetime.timezone.utc).isoformat()
     fs_safe_path = base64.b64encode(url.path.encode('utf-8')).decode('utf-8', 'strict')
-    screenshot_path = f"/page_cache/{url.netloc}{fs_safe_path}.png"
+    screenshot_path = f"page_cache/{url.netloc}{fs_safe_path}.png"
     if do_update(screenshot_path):
         browser.get(redirect_page)
         page_screenshot_data['image'] = screenshot_path
