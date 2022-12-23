@@ -9,7 +9,7 @@ function ScreenshotImage() {
   }
   console.log(linkAddress);
   var linkUrl = new URL(linkAddress);
-  return <img src={"page_cache/" + linkUrl.host + btoa(linkUrl.pathname) + ".png"} />;
+  return <img src={"/page_cache/" + linkUrl.host + btoa(linkUrl.pathname) + ".png"} />;
 
 }
 
