@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>Links for collection get</title>
+<title>Links for themed collection</title
 <head>
 <body>
   {{content}}
@@ -10,4 +10,15 @@
     <a href="{{ theme_item.url }}">{{theme_item.title}}</a>
   </h2>
   {% endfor %}
+  <script>
+    const root = ReactDOM.createRoot(
+      document.getElementById('root') as HTMLElement
+    );
+    root.render(
+      <React.StrictMode>
+        <App />
+        <div id="someotherdiv" />
+      </React.StrictMode>
+    );
+  </script>
 </body>
