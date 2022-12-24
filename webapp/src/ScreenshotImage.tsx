@@ -7,7 +7,6 @@ function ScreenshotImage() {
   if (linkAddress === undefined || linkAddress === null) {
     linkAddress = "https://example.com/path";
   }
-  console.log(linkAddress);
   var linkUrl = new URL(linkAddress);
   return <img src={"/page_cache/" + linkUrl.host + btoa(linkUrl.pathname) + ".png"} />;
 

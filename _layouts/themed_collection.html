@@ -3,8 +3,7 @@
 <title>Links for collection themed</title>
 <head>
 <body>
-  {% comment %} Rename the site.[COLLECTION_NAME] to the correct one and then render {% endcomment %}
+  {% comment %} Rename the site.[COLLECTION_NAME] variable to the correct one and then do include {% endcomment %}
   {%- assign all_collection_items = site.themed_collection %}
-  {%- assign collection_items = all_collection_items | where_exp:"item","item.title != 'Index'" %}
   {% include collection_index.html %}
 </body>

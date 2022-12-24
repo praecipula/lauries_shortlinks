@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>Redirecting to {{content}}</title>
+<title>Redirecting to {{page.redirect}}</title>
 <meta http-equiv="refresh" content="{{page.wait}}; URL={{page.redirect}}">
 <link id="redirect_location" rel="canonical" href="{{page.redirect}}">
 <head>
@@ -13,8 +13,6 @@
 
     gtag('config', 'G-0TMRHMVW8W');
   </script>
-  <script defer="defer" src="/assets/js/webapp.js"></script>
-  <link href="/assets/css/webapp.css" rel="stylesheet">
 </head>
 <body>
   <p>Redirecting to <a href="{{page.redirect}}">{{page.redirect}}</a> in <em>{{page.wait}}</em> seconds...</p>
@@ -25,18 +23,17 @@
     <a href={{"https://www.google.com/maps/dir/?api=1&destination=" | append: page.maps_navigate | replace: " ", "+" | replace: ",", "%2C"}} />Navigate to {{page.maps_navigate}}</a>
   {% endif %}
   <a href="{{page.redirect}}">
-    <div id="root"></div>
+    <div id="root" 
+         data-page-redirect="{{page.redirect}}"
+         data-page-wait="{{page.wait}}"
+         data-page-maps-navigate="{{page.maps_navigate}}"></div>
   </a>
-  <script>
-    const root = ReactDOM.createRoot(
-      document.getElementById('root') as HTMLElement
-    );
-    root.render(
-      <React.StrictMode>
-        <App />
-        <div id="someotherdiv" />
-      </React.StrictMode>
-    );
-  </script>
+  <!-- Pass in all the relevant frontmatter from the static page to the dynamic react app as props.
+    This is how we connect the simple YAML / content-based work to a part of the app that has
+    logic. Just pass 'em all even if unused.
+    In addition, any interesting content about the page from other Jekyll/Liquid variables should pass in this way as well.
+  -->
 
+  <script src="/assets/js/webapp.js"></script>
+  <link href="/assets/css/webapp.css" rel="stylesheet">
 </body>
