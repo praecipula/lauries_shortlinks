@@ -24,9 +24,12 @@
   {% endif %}
   <a href="{{page.redirect}}">
     <div id="root" 
+         data-page-title="{{page.title}}"
+         data-page-layout="{{page.layout}}"
          data-page-redirect="{{page.redirect}}"
+         data-page-maps-navigate="{{page.maps_navigate}}"
          data-page-wait="{{page.wait}}"
-         data-page-maps-navigate="{{page.maps_navigate}}"></div>
+         data-page-screenshot="{{page.screenshot}}" />
   </a>
   <!-- Pass in all the relevant frontmatter from the static page to the dynamic react app as props.
     This is how we connect the simple YAML / content-based work to a part of the app that has
