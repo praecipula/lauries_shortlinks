@@ -14,41 +14,43 @@ class App extends React.Component<any> {
   render() {
     console.log(this.props);
     var qrText = ""
-    var caption = ""
     if (this.props.codeContent != null) {
       qrText = this.props.codeContent
-      caption = this.props.codeContent
     } else {
       qrText = document.location.href
-      caption = ""
     }
     type optionalComponentProps = {
       logoImage?: string
+      ecLevel?: "H" | "M" | "L" | "Q";
     }
     var optionalLogo : optionalComponentProps = {};
     if (this.props.iconUrl != null) {
-      optionalLogo['logoImage'] = this.props.iconUrl
+      optionalLogo['logoImage'] = this.props.iconUrl;
+    }
+    if (this.props.errorCorrection != null) {
+      optionalLogo['ecLevel'] = this.props.errorCorrection;
+    } else {
+      optionalLogo['ecLevel'] = "H"; //The highest level
     }
     console.log(optionalLogo)
     var component = <div style={{ height: "400px", width: '320px' }}>
                   <QRCode value={qrText}
                     size={300}
                     qrStyle="dots"
-                    ecLevel="H"
-                    fgColor="#262626"
+                    fgColor="#262664"
                     eyeRadius={[
-                      [0, 50, 0, 50],
                       [50, 0, 50, 0],
-                      [50, 0, 50, 0]]}
+                      [0, 50, 0, 50],
+                      [0, 50, 0, 50]]}
                     eyeColor={[
-                      { inner: '#262626',
-                        outer: 'darkgreen'
+                      { inner: '#262664',
+                        outer: '#151515'
                       },
-                      { inner: '#262626',
-                        outer: 'darkgreen'
+                      { inner: '#262664',
+                        outer: '#151515'
                       },
-                      { inner: '#262626',
-                        outer: 'darkgreen'
+                      { inner: '#262664',
+                        outer: '#151515'
                       },
                       ]}
                       {...optionalLogo}
