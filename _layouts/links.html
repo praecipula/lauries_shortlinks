@@ -12,8 +12,13 @@
   <hr />
   {% include maps_directions.html %}
   <a href="{{page.redirect}}">
-    <div class="qrcode-container" data-code-content="matt.directory{{page.url}}" data-icon-url="/assets/img/emoji/{{page.emoji}}.png" data-error-correction="L"></div>
+    {% assign errorlevel = "M" %}
+    {% if page.errorlevel %}
+      {% assign errorlevel = page.errorlevel %}
+    {% endif %}
+    <div class="qrcode-container" data-code-content="matt.directory{{page.url}}" data-icon-url="/assets/img/emoji/{{page.emoji}}.png" data-error-correction="{{errorlevel}}"></div>
   </a>
+  <div class="screenshot-container" />
   <script src="/assets/js/webapp.js"></script>
   <link href="/assets/css/webapp.css" rel="stylesheet">
 </body>

@@ -5,7 +5,11 @@
 {% for collection_item in collection_items | sort: 'title' %}
   <h2>
     <a href="{{ collection_item.url }}">{{collection_item.title}}</a>
-    <div class="qrcode-container" data-code-content="matt.directory{{collection_item.url}}" data-icon-url="/assets/img/emoji/{{collection_item.emoji}}.png" data-error-correction="L"></div>
+    {% assign errorlevel = "M" %}
+    {% if collection_item.errorlevel %}
+      {% assign errorlevel = collection_item.errorlevel %}
+    {% endif %}
+    <div class="qrcode-container" data-code-content="matt.directory{{collection_item.url}}" data-icon-url="/assets/img/emoji/{{collection_item.emoji}}.png" data-error-correction="{{errorlevel}}"></div>
   </h2>
 {% endfor %}
 

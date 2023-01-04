@@ -12,7 +12,7 @@
   <h2>This QR code is for this password-linked page and is free to share.</h2>
   <h3>Requesting password in {{page.wait}} seconds...</h3>
   <!-- Show a qrcode - this should be the canonical qr code to share, as it is this page and therefore not sensitive -->
-  <div class="qrcode-container" data-code-content="{{page.qrcode}}" data-icon-url="/assets/img/emoji/{{page.emoji}}.png" data-error-correction="L"></div>
+  <div class="qrcode-container" data-code-content="matt.directory{{page.url}}" data-icon-url="/assets/img/emoji/{{page.emoji}}.png" data-error-correction="H"></div>
   <div class="password-redirect-container" data-redirect-to="{{page.slug}}" data-wait-time="{{page.wait}}"></div>
   <script src="/assets/js/webapp.js"></script>
   <link href="/assets/css/webapp.css" rel="stylesheet">
