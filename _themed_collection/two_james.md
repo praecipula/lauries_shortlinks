@@ -6,5 +6,6 @@ redirect: "https://twojames.com/"
 maps_navigate: "Two James Spirits, Detroit, MI"
 wait: 5
 screenshot: true
+emoji: tumbler_glass
 ---
 

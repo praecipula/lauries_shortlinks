@@ -6,5 +6,6 @@ redirect: "https://www.lancitynoodles.com/"
 maps_navigate: "Lan City Pulled Noodles, Ann Arbor, MI"
 wait: 5
 screenshot: true
+emoji: ramen
 ---
 

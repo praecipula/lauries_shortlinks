@@ -6,5 +6,6 @@ redirect: "https://misskimannarbor.com/"
 maps_navigate: "Miss Kim, Ann Arbor, MI"
 wait: 5
 screenshot: true
+emoji: dumpling
 ---
 

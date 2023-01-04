@@ -5,5 +5,9 @@
 {% for collection_item in collection_items | sort: 'title' %}
   <h2>
     <a href="{{ collection_item.url }}">{{collection_item.title}}</a>
+    <div class="qrcode-container" data-code-content="matt.directory{{collection_item.url}}" data-icon-url="/assets/img/emoji/{{collection_item.emoji}}.png" data-error-correction="L"></div>
   </h2>
 {% endfor %}
+
+<script src="/assets/js/webapp.js"></script>
+<link href="/assets/css/webapp.css" rel="stylesheet">

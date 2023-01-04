@@ -56,7 +56,6 @@ class App extends React.Component<any> {
                       {...optionalLogo}
                       />
                   <p style={{width: "100%", textAlign: "center", margin: "0", fontWeight: "700", overflowWrap:"break-word"}}>{qrText}</p>
-                  <canvas id="emoji-rendering-canvas" />
                 </div>
     return (
       <div>

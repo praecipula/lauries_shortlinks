@@ -6,6 +6,7 @@ redirect: "https://bonbonbon.com/"
 maps_navigate: "Bon Bon Bon, Detroit, MI"
 wait: 5
 screenshot: true
+emoji: chocolate_bar
 ---
 
 

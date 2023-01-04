@@ -6,5 +6,6 @@ redirect: "https://thelunchrooma2.com/detroit-street-filling-station-1"
 maps_navigate: "Detroit Street Filling Station, Ann Arbor, MI"
 wait: 5
 screenshot: true
+emoji: knife_fork_plate
 ---
 

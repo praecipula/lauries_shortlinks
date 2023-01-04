@@ -6,5 +6,6 @@ redirect: "https://www.facebook.com/cometcoffee/"
 maps_navigate: "Comet Coffee, Ann Arbor, MI"
 wait: 5
 screenshot: true
+emoji: coffee
 ---
 

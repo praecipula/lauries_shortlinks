@@ -6,5 +6,6 @@ redirect: "https://umma.umich.edu/"
 maps_navigate: "University of Michigan Museum of Art, Ann Arbor, MI"
 wait: 50
 screenshot: true
+emoji: art
 ---
 

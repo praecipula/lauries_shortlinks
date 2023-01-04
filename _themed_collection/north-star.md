@@ -6,5 +6,6 @@ redirect: "https://www.nstarlounge.com/"
 maps_navigate: "North Star Lounge, Ann Arbor, MI"
 wait: 5
 screenshot: true
+emoji: notes
 ---
 

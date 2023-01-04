@@ -6,5 +6,6 @@ redirect: "https://fritabatidos.com/"
 maps_navigate: "Frita Batidos, Ann Arbor, MI"
 wait: 5
 screenshot: true
+emoji: flag-cu
 ---
 

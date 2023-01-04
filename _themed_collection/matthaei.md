@@ -6,5 +6,6 @@ redirect: "https://mbgna.umich.edu/matthaei-botanical-gardens/conservatory/"
 maps_navigate: "Matthaei Botanical Gardens, Ann Arbor, MI"
 wait: 5
 screenshot: true
+emoji: deciduous_tree
 ---
 

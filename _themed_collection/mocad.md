@@ -6,6 +6,7 @@ redirect: "https://mocadetroit.org/"
 maps_navigate: "Museum of Contemporary Art, Detroit, MI"
 wait: 5
 screenshot: true
+emoji: frame_with_picture
 ---
 
 

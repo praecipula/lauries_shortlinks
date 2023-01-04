@@ -23,13 +23,7 @@
     <a href={{"https://www.google.com/maps/dir/?api=1&destination=" | append: page.maps_navigate | replace: " ", "+" | replace: ",", "%2C"}} />Navigate to {{page.maps_navigate}}</a>
   {% endif %}
   <a href="{{page.redirect}}">
-    <div id="root" 
-         data-page-title="{{page.title}}"
-         data-page-layout="{{page.layout}}"
-         data-page-redirect="{{page.redirect}}"
-         data-page-maps-navigate="{{page.maps_navigate}}"
-         data-page-wait="{{page.wait}}"
-         data-page-screenshot="{{page.screenshot}}" />
+    <div class="qrcode-container" data-code-content="matt.directory{{page.url}}" data-icon-url="/assets/img/emoji/{{page.emoji}}.png" data-error-correction="L"></div>
   </a>
   <!-- Pass in all the relevant frontmatter from the static page to the dynamic react app as props.
     This is how we connect the simple YAML / content-based work to a part of the app that has

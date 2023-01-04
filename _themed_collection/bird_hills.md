@@ -6,5 +6,6 @@ redirect: "https://www.a2gov.org/departments/Parks-Recreation/parks-places/pages
 maps_navigate: "Bird Hills Nature Area, Ann Arbor, MI"
 wait: 5
 screenshot: true
+emoji: hiking_boot
 ---
 

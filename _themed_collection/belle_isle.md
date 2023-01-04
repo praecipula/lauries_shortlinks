@@ -6,6 +6,7 @@ redirect: "https://www.belleisleconservancy.org/"
 maps_navigate: "Belle Isle Conservancy, Detroit, MI"
 wait: 5
 screenshot: true
+emoji: tulip
 ---
 
 "The Anna Scripps Whitcomb Conservatory will close November 14, 2022 through 2024 for major renovations."
