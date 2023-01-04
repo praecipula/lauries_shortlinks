@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Tiny semi-permanent shortlinks</title>
+<head>
+<body>
+  {% comment %} Rename the site.[COLLECTION_NAME] variable to the correct one and then do include {% endcomment %}
+  {%- assign all_collection_items = site.tiny %}
+  {% include collection_index.html %}
+</body>

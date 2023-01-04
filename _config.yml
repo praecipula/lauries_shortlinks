@@ -34,7 +34,7 @@ collections:
     output: true
     permalink: /:collection/:name
 
-  short:
+  tiny:
     output: true
     permalink: /:name
 
