@@ -51,6 +51,8 @@ collections:
   private_matt:
     # This is your standard simple password
     output: true
+    #IMPORTANT: if you change the password, which changes the hash,
+    #ALSO CHANGE THIS IN ROBOTS.TXT to avoid crawling of this directory.
     permalink: /43fc89395ef02296438e189c8aaacc0ab082199d9038e0705421229c667b42ce/:name
 
 

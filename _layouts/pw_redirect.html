@@ -2,19 +2,17 @@
 <meta charset="utf-8">
 <title>Enter password to continue</title>
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0TMRHMVW8W"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-0TMRHMVW8W');
-  </script>
+  <!-- Is it necessary to turn off indexing for the redirection page? Well, it's at least conservative. -->
+  {% include noindex.html %}
+  {% include gtag.html %}
 </head>
 <body>
   {{content}}
   <hr />
-  <div class="qrcode-container" data-code-content="{{page.qrcode}}" data-icon-url="/assets/img/emoji/{{page.emoji}}.png" data-error-correction="H"></div>
+  <h2>This QR code is for this password-linked page and is free to share.</h2>
+  <h3>Requesting password in {{page.wait}} seconds...</h3>
+  <!-- Show a qrcode - this should be the canonical qr code to share, as it is this page and therefore not sensitive -->
+  <div class="qrcode-container" data-code-content="{{page.qrcode}}" data-icon-url="/assets/img/emoji/{{page.emoji}}.png" data-error-correction="L"></div>
   <div class="password-redirect-container" data-redirect-to="{{page.slug}}" data-wait-time="{{page.wait}}"></div>
   <script src="/assets/js/webapp.js"></script>
   <link href="/assets/css/webapp.css" rel="stylesheet">

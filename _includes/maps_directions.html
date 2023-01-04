@@ -1,0 +1,4 @@
+  {% if page.maps_navigate %}
+    <a href={{"https://www.google.com/maps/dir/?api=1&destination=" | append: page.maps_navigate | replace: " ", "+" | replace: ",", "%2C"}} />Navigate to {{page.maps_navigate}}</a>
+  <hr />
+  {% endif %}

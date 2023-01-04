@@ -1,36 +1,19 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <title>Redirecting to {{page.redirect}}</title>
-<meta http-equiv="refresh" content="{{page.wait}}; URL={{page.redirect}}">
-<link id="redirect_location" rel="canonical" href="{{page.redirect}}">
+{% include redirect_meta.html %}
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0TMRHMVW8W"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-0TMRHMVW8W');
-  </script>
+  {% include gtag.html %}
 </head>
 <body>
-  <p>Redirecting to <a href="{{page.redirect}}">{{page.redirect}}</a> in <em>{{page.wait}}</em> seconds...</p>
+  {% include redirect_message.html %}
   <hr />
   {{content}}
   <hr />
-  {% if page.maps_navigate %}
-    <a href={{"https://www.google.com/maps/dir/?api=1&destination=" | append: page.maps_navigate | replace: " ", "+" | replace: ",", "%2C"}} />Navigate to {{page.maps_navigate}}</a>
-  {% endif %}
+  {% include maps_directions.html %}
   <a href="{{page.redirect}}">
     <div class="qrcode-container" data-code-content="matt.directory{{page.url}}" data-icon-url="/assets/img/emoji/{{page.emoji}}.png" data-error-correction="L"></div>
   </a>
-  <!-- Pass in all the relevant frontmatter from the static page to the dynamic react app as props.
-    This is how we connect the simple YAML / content-based work to a part of the app that has
-    logic. Just pass 'em all even if unused.
-    In addition, any interesting content about the page from other Jekyll/Liquid variables should pass in this way as well.
-  -->
-
   <script src="/assets/js/webapp.js"></script>
   <link href="/assets/css/webapp.css" rel="stylesheet">
 </body>

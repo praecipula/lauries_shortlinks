@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Generated QR code from page front matter</title>
+<head>
+  {% include noindex.html %}
+  {% include gtag.html %}
+</head>
+<body>
+  {{content}}
+  <hr />
+  <h2> This QR code is <em>private</em>. Please do not share it.</h2>
+  <a href="/pw/{{page.slug}}"><h3>The shareable code is at /pw/{{page.slug}}</h3></a>
+  <!-- TODO: factor this out; also width here is bogus (how to get right DRY width when React element sets the width?) -->
+<style>
+  .noshare {
+    border-style: solid;
+    border-color: red;
+    border-width: 4px;
+    width: 320px;
+  }
+</style>
+  <div class="qrcode-container noshare" data-code-content="{{page.qrcode}}" data-icon-url="/assets/img/emoji/{{page.emoji}}.png" data-error-correction="H"></div>
+  <script src="/assets/js/webapp.js"></script>
+  <link href="/assets/css/webapp.css" rel="stylesheet">
+</body>
