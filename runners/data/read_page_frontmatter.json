@@ -1,563 +1,5 @@
 {
   "_default": {
-    "30": {
-      "data": [
-        {
-          "filename": "_get/onion.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://app.asana.com/-/create_task?project=200787944626650&name=onion&description=Added%20from%20shortlink",
-            "title": "Onion",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_get/parsnip.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://app.asana.com/-/create_task?project=200787944626650&name=parsnip&description=Added%20from%20shortlink",
-            "title": "Parsnip",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_get/index.md",
-          "front_matter_data": {
-            "layout": "get_collection",
-            "permalink": "/get/index.html"
-          }
-        },
-        {
-          "filename": "_get/avacado.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://app.asana.com/-/create_task?project=200787944626650&name=avocado&description=Added%20from%20shortlink",
-            "title": "Avocado",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_posts/2022-11-29-photos.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://photos.app.goo.gl/Wc8SiW4rtqa2VBWBA",
-            "title": "Shared photos link",
-            "wait": 2
-          }
-        },
-        {
-          "filename": "_posts/2022-11-29-pages-refresh.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "http://matt.directory",
-            "title": "Refresh to root in pages deploy delay time",
-            "wait": 20
-          }
-        },
-        {
-          "filename": "_posts/2022-11-29-tiny.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "/tiny",
-            "title": "Pre-generated tiny codes",
-            "wait": 600
-          }
-        },
-        {
-          "filename": "_posts/2022-11-29-directory.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "http://matt.directory/",
-            "title": "Code for... here! (root of website)",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_posts/2022-11-29-lauries-photos.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://www.facebook.com/laurie.caird.bramlage/photos_albums",
-            "title": "Laurie's photos",
-            "wait": 2
-          }
-        },
-        {
-          "filename": "_posts/2022-11-20-hamachitoamaebi.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://www.instagram.com/hamachitoamaebi/",
-            "title": "hamachitoamaebi Instagram",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_posts/2022-12-8-cookies.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://www.google.com/amp/s/www.williams-sonoma.com/m/recipe/chocolate-crinkle-cookies.amp.html",
-            "title": "Crinkle cookies",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_posts/template.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "[URL]",
-            "title": "[TEMPLATE]",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_posts/2022-11-21-go-home.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://www.google.com/maps/dir/?api=1&destination=623+Fairmount+Ave%2C+Oakland%2C+California",
-            "title": "Directions to Matt and Laurie's house",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_posts/2022-11-29-portfolio.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://www.mystreetscape.com/ssc/singlecontainer/my/lfa/app/consumer-portfolio-summary",
-            "title": "Wealthscape Portfolio",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_posts/2022-11-20-printer-ink.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://www.amazon.com/Canon-PGI-250XL-CLI-251-Cartridges-6432B011/dp/B00F9O3NOC",
-            "title": "Printer ink",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_posts/2022-11-29-asan.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://www.marketwatch.com/investing/stock/asan",
-            "title": "$ASAN on Marketwatch",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_posts/2000-01-01-example.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "offline_cache": true,
-            "redirect": "http://example.com/path",
-            "screenshot": true,
-            "title": "Redirect to example.com as a show of how this works",
-            "wait": 5000
-          }
-        },
-        {
-          "filename": "_posts/2022-11-29-analytics.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://analytics.google.com/analytics/web/?authuser=0#/p344349242/reports/intelligenthome",
-            "title": "Google Analytics for this site",
-            "wait": 2
-          }
-        },
-        {
-          "filename": "_posts/2022-11-20-cube-rule-food.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://cuberule.com/",
-            "title": "Cube rule of food",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_posts/2022-11-29-weather.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://www.wunderground.com/wundermap",
-            "title": "Wundermap",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_posts/2022-11-29-add-shoppping.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://app.asana.com/-/create_task?project=200787944626650",
-            "title": "Create a shopping list task",
-            "wait": 1
-          }
-        },
-        {
-          "filename": "_posts/2022-11-29-apartment-portal.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://mavericks.managebuilding.com/Resident/portal/",
-            "title": "Mavericks Apartment Portal",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_posts/2022-11-29-github_repo.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://github.com/praecipula/l",
-            "title": "Directory's (my) github repo",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_posts/2022-12-01-sous-vide-chicken.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://www.seriouseats.com/the-food-lab-complete-guide-to-sous-vide-chicken-breast",
-            "title": "Serious Eats sous vide chicken breast",
-            "wait": 0
-          }
-        },
-        {
-          "filename": "_posts/2022-11-29-password-protect.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://www.agalera.eu/github-pages-password/",
-            "title": "Password protecting Github Pages",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_short/me.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://www.linkedin.com/in/mattbramlage/",
-            "title": "Matt's LinkedIn",
-            "wait": 0
-          }
-        },
-        {
-          "filename": "_short/2.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://www.bbc.co.uk/food/recipes/cheats_rough_puff_pastry_91549",
-            "screenshot": 2,
-            "title": "1",
-            "wait": 1
-          }
-        },
-        {
-          "filename": "_short/4.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://food52.com/recipes/39193-deep-dish-chicken-pot-pie",
-            "screenshot": true,
-            "title": "1",
-            "wait": 1
-          }
-        },
-        {
-          "filename": "_short/6.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://food52.com/recipes/39193-deep-dish-chicken-pot-pie",
-            "screenshot": true,
-            "title": "1",
-            "wait": 1
-          }
-        },
-        {
-          "filename": "_short/3.md",
-          "front_matter_data": {
-            "layout": "links",
-            "redirect": "https://food52.com/recipes/39193-deep-dish-chicken-pot-pie",
-            "screenshot": true,
-            "title": "1",
-            "wait": 1
-          }
-        },
-        {
-          "filename": "_short/9.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://food52.com/recipes/39193-deep-dish-chicken-pot-pie",
-            "screenshot": true,
-            "title": "1",
-            "wait": 1
-          }
-        },
-        {
-          "filename": "_short/8.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://food52.com/recipes/39193-deep-dish-chicken-pot-pie",
-            "screenshot": true,
-            "title": "1",
-            "wait": 1
-          }
-        },
-        {
-          "filename": "_short/5.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://food52.com/recipes/39193-deep-dish-chicken-pot-pie",
-            "screenshot": true,
-            "title": "1",
-            "wait": 1
-          }
-        },
-        {
-          "filename": "_short/7.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://food52.com/recipes/39193-deep-dish-chicken-pot-pie",
-            "screenshot": true,
-            "title": "1",
-            "wait": 1
-          }
-        },
-        {
-          "filename": "_short/1.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "https://oksdeli.com/lunch",
-            "screenshot": true,
-            "title": "1",
-            "wait": 1
-          }
-        },
-        {
-          "filename": "_themed_collection/frita.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "maps_navigate": "Frita Batidos, Ann Arbor, MI",
-            "redirect": "https://fritabatidos.com/",
-            "screenshot": true,
-            "title": "Frita Batidos",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_themed_collection/bon.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "maps_navigate": "Bon Bon Bon, Detroit, MI",
-            "redirect": "https://bonbonbon.com/",
-            "screenshot": true,
-            "title": "Bon Bon Bon",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_themed_collection/schedule.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "/th/schedule",
-            "title": "Schedule",
-            "wait": 300
-          }
-        },
-        {
-          "filename": "_themed_collection/noodles.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "maps_navigate": "Lan City Pulled Noodles, Ann Arbor, MI",
-            "redirect": "https://www.lancitynoodles.com/",
-            "screenshot": true,
-            "title": "Lan City Pulled Noodles",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_themed_collection/dt_xmas.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "maps_navigate": "Campus Martius Park, Detroit, MI",
-            "redirect": "https://downtowndetroit.org/experience-downtown/things-to-do/",
-            "screenshot": true,
-            "title": "Downtown Christmas Wanderings",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_themed_collection/filling-station.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "maps_navigate": "Detroit Street Filling Station, Ann Arbor, MI",
-            "redirect": "https://thelunchrooma2.com/detroit-street-filling-station-1",
-            "screenshot": true,
-            "title": "Detroit Street Filling Station",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_themed_collection/north-star.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "maps_navigate": "North Star Lounge, Ann Arbor, MI",
-            "redirect": "https://www.nstarlounge.com/",
-            "screenshot": true,
-            "title": "North Star",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_themed_collection/wifi.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "redirect": "/th/wifi",
-            "title": "Wifi password",
-            "wait": 300
-          }
-        },
-        {
-          "filename": "_themed_collection/bird_hills.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "maps_navigate": "Bird Hills Nature Area, Ann Arbor, MI",
-            "redirect": "https://www.a2gov.org/departments/Parks-Recreation/parks-places/pages/birdhills.aspx",
-            "screenshot": true,
-            "title": "Bird Hills Nature Area",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_themed_collection/miss-kim.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "maps_navigate": "Miss Kim, Ann Arbor, MI",
-            "redirect": "https://misskimannarbor.com/",
-            "screenshot": true,
-            "title": "Miss Kim",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_themed_collection/two_james.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "maps_navigate": "Two James Spirits, Detroit, MI",
-            "redirect": "https://twojames.com/",
-            "screenshot": true,
-            "title": "Two James Distillery",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_themed_collection/belle_isle.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "maps_navigate": "Belle Isle Conservancy, Detroit, MI",
-            "redirect": "https://www.belleisleconservancy.org/",
-            "screenshot": true,
-            "title": "Belle Isle Conservancy",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_themed_collection/index.md",
-          "front_matter_data": {
-            "layout": "themed_collection",
-            "permalink": "/th/index.html"
-          }
-        },
-        {
-          "filename": "_themed_collection/umma.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "maps_navigate": "University of Michigan Museum of Art, Ann Arbor, MI",
-            "redirect": "https://umma.umich.edu/",
-            "screenshot": true,
-            "title": "University of Michigan Museum of Art",
-            "wait": 50
-          }
-        },
-        {
-          "filename": "_themed_collection/matthaei.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "maps_navigate": "Matthaei Botanical Gardens, Ann Arbor, MI",
-            "redirect": "https://mbgna.umich.edu/matthaei-botanical-gardens/conservatory/",
-            "screenshot": true,
-            "title": "Matthaei Botanical Gardens",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_themed_collection/comet.md",
-          "front_matter_data": {
-            "date": "1900-01-01 08:00:00 -0700",
-            "layout": "links",
-            "maps_navigate": "Comet Coffee, Ann Arbor, MI",
-            "redirect": "https://www.facebook.com/cometcoffee/",
-            "screenshot": true,
-            "title": "Comet Coffee",
-            "wait": 5
-          }
-        },
-        {
-          "filename": "_themed_collection/mocad.md",
-          "front_matter_data": {
-            "date": "2022-12-09 08:00:00 -0700",
-            "layout": "links",
-            "maps_navigate": "Museum of Contemporary Art, Detroit, MI",
-            "redirect": "https://mocadetroit.org/",
-            "screenshot": true,
-            "title": "Museum of Contemporary Art Detroit",
-            "wait": 5
-          }
-        }
-      ],
-      "script": "read_page_frontmatter",
-      "time": "2022-12-31T12:50:59.323404+00:00"
-    },
     "31": {
       "data": [
         {
@@ -2789,6 +2231,462 @@
       ],
       "script": "read_page_frontmatter",
       "time": "2023-01-04T12:56:30.427331+00:00"
+    },
+    "35": {
+      "data": [
+        {
+          "filename": "_get/onion.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "layout": "links",
+            "redirect": "https://app.asana.com/-/create_task?project=200787944626650&name=onion&description=Added%20from%20shortlink",
+            "title": "Onion",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_get/parsnip.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "layout": "links",
+            "redirect": "https://app.asana.com/-/create_task?project=200787944626650&name=parsnip&description=Added%20from%20shortlink",
+            "title": "Parsnip",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_get/index.md",
+          "front_matter_data": {
+            "layout": "get_collection",
+            "permalink": "/get/index.html"
+          }
+        },
+        {
+          "filename": "_get/avacado.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "layout": "links",
+            "redirect": "https://app.asana.com/-/create_task?project=200787944626650&name=avocado&description=Added%20from%20shortlink",
+            "title": "Avocado",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_posts/2022-11-29-photos.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "layout": "links",
+            "redirect": "https://photos.app.goo.gl/Wc8SiW4rtqa2VBWBA",
+            "title": "Shared photos link",
+            "wait": 2
+          }
+        },
+        {
+          "filename": "_posts/2022-11-29-pages-refresh.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "layout": "links",
+            "redirect": "http://matt.directory",
+            "title": "Refresh to root in pages deploy delay time",
+            "wait": 20
+          }
+        },
+        {
+          "filename": "_posts/2022-11-29-directory.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "layout": "links",
+            "redirect": "http://matt.directory/",
+            "title": "Code for... here! (root of website)",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_posts/2022-11-29-lauries-photos.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "layout": "links",
+            "redirect": "https://www.facebook.com/laurie.caird.bramlage/photos_albums",
+            "title": "Laurie's photos",
+            "wait": 2
+          }
+        },
+        {
+          "filename": "_posts/2022-11-20-hamachitoamaebi.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "layout": "links",
+            "redirect": "https://www.instagram.com/hamachitoamaebi/",
+            "title": "hamachitoamaebi Instagram",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_posts/2022-12-8-cookies.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "layout": "links",
+            "redirect": "https://www.google.com/amp/s/www.williams-sonoma.com/m/recipe/chocolate-crinkle-cookies.amp.html",
+            "title": "Crinkle cookies",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_posts/template.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "layout": "links",
+            "redirect": "[URL]",
+            "title": "[TEMPLATE]",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_posts/2022-11-21-go-home.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "layout": "links",
+            "redirect": "https://www.google.com/maps/dir/?api=1&destination=623+Fairmount+Ave%2C+Oakland%2C+California",
+            "title": "Directions to Matt and Laurie's house",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_posts/2022-11-29-portfolio.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "layout": "links",
+            "redirect": "https://www.mystreetscape.com/ssc/singlecontainer/my/lfa/app/consumer-portfolio-summary",
+            "title": "Wealthscape Portfolio",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_posts/2022-11-20-printer-ink.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "layout": "links",
+            "redirect": "https://www.amazon.com/Canon-PGI-250XL-CLI-251-Cartridges-6432B011/dp/B00F9O3NOC",
+            "title": "Printer ink",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_posts/2022-11-29-asan.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "layout": "links",
+            "redirect": "https://www.marketwatch.com/investing/stock/asan",
+            "title": "$ASAN on Marketwatch",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_posts/2000-01-01-example.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "layout": "links",
+            "offline_cache": true,
+            "redirect": "http://example.com/path",
+            "screenshot": true,
+            "title": "Redirect to example.com as a show of how this works",
+            "wait": 5000
+          }
+        },
+        {
+          "filename": "_posts/2022-11-29-analytics.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "layout": "links",
+            "redirect": "https://analytics.google.com/analytics/web/?authuser=0#/p344349242/reports/intelligenthome",
+            "title": "Google Analytics for this site",
+            "wait": 2
+          }
+        },
+        {
+          "filename": "_posts/2022-11-20-cube-rule-food.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "layout": "links",
+            "redirect": "https://cuberule.com/",
+            "title": "Cube rule of food",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_posts/2022-11-29-weather.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "layout": "links",
+            "redirect": "https://www.wunderground.com/wundermap",
+            "title": "Wundermap",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_posts/2022-11-29-add-shoppping.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "layout": "links",
+            "redirect": "https://app.asana.com/-/create_task?project=200787944626650",
+            "title": "Create a shopping list task",
+            "wait": 1
+          }
+        },
+        {
+          "filename": "_posts/2022-11-29-apartment-portal.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "layout": "links",
+            "redirect": "https://mavericks.managebuilding.com/Resident/portal/",
+            "title": "Mavericks Apartment Portal",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_posts/2022-11-29-github_repo.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "layout": "links",
+            "redirect": "https://github.com/praecipula/l",
+            "title": "Directory's (my) github repo",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_posts/2022-12-01-sous-vide-chicken.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "layout": "links",
+            "redirect": "https://www.seriouseats.com/the-food-lab-complete-guide-to-sous-vide-chicken-breast",
+            "title": "Serious Eats sous vide chicken breast",
+            "wait": 0
+          }
+        },
+        {
+          "filename": "_posts/2022-11-29-password-protect.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "layout": "links",
+            "redirect": "https://www.agalera.eu/github-pages-password/",
+            "title": "Password protecting Github Pages",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_themed_collection/frita.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "emoji": "flag-cu",
+            "layout": "links",
+            "maps_navigate": "Frita Batidos, Ann Arbor, MI",
+            "redirect": "https://fritabatidos.com/",
+            "screenshot": true,
+            "title": "Frita Batidos",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_themed_collection/bon.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "emoji": "chocolate_bar",
+            "layout": "links",
+            "maps_navigate": "Bon Bon Bon, Detroit, MI",
+            "redirect": "https://bonbonbon.com/",
+            "screenshot": true,
+            "title": "Bon Bon Bon",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_themed_collection/schedule.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "emoji": "calendar",
+            "layout": "links",
+            "redirect": "/th/schedule",
+            "title": "Schedule",
+            "wait": 300
+          }
+        },
+        {
+          "filename": "_themed_collection/noodles.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "emoji": "ramen",
+            "layout": "links",
+            "maps_navigate": "Lan City Pulled Noodles, Ann Arbor, MI",
+            "redirect": "https://www.lancitynoodles.com/",
+            "screenshot": true,
+            "title": "Lan City Pulled Noodles",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_themed_collection/dt_xmas.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "emoji": "cityscape",
+            "layout": "links",
+            "maps_navigate": "Campus Martius Park, Detroit, MI",
+            "redirect": "https://downtowndetroit.org/experience-downtown/things-to-do/",
+            "screenshot": true,
+            "title": "Downtown Christmas Wanderings",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_themed_collection/filling-station.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "emoji": "knife_fork_plate",
+            "layout": "links",
+            "maps_navigate": "Detroit Street Filling Station, Ann Arbor, MI",
+            "redirect": "https://thelunchrooma2.com/detroit-street-filling-station-1",
+            "screenshot": true,
+            "title": "Detroit Street Filling Station",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_themed_collection/north-star.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "emoji": "notes",
+            "layout": "links",
+            "maps_navigate": "North Star Lounge, Ann Arbor, MI",
+            "redirect": "https://www.nstarlounge.com/",
+            "screenshot": true,
+            "title": "North Star",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_themed_collection/wifi.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "emoji": "signal_strength",
+            "layout": "links",
+            "redirect": "/th/wifi",
+            "title": "Wifi password",
+            "wait": 300
+          }
+        },
+        {
+          "filename": "_themed_collection/bird_hills.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "emoji": "hiking_boot",
+            "layout": "links",
+            "maps_navigate": "Bird Hills Nature Area, Ann Arbor, MI",
+            "redirect": "https://www.a2gov.org/departments/Parks-Recreation/parks-places/pages/birdhills.aspx",
+            "screenshot": true,
+            "title": "Bird Hills Nature Area",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_themed_collection/miss-kim.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "emoji": "dumpling",
+            "layout": "links",
+            "maps_navigate": "Miss Kim, Ann Arbor, MI",
+            "redirect": "https://misskimannarbor.com/",
+            "screenshot": true,
+            "title": "Miss Kim",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_themed_collection/two_james.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "emoji": "tumbler_glass",
+            "layout": "links",
+            "maps_navigate": "Two James Spirits, Detroit, MI",
+            "redirect": "https://twojames.com/",
+            "screenshot": true,
+            "title": "Two James Distillery",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_themed_collection/belle_isle.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "emoji": "tulip",
+            "layout": "links",
+            "maps_navigate": "Belle Isle Conservancy, Detroit, MI",
+            "redirect": "https://www.belleisleconservancy.org/",
+            "screenshot": true,
+            "title": "Belle Isle Conservancy",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_themed_collection/index.md",
+          "front_matter_data": {
+            "layout": "themed_collection",
+            "permalink": "/th/index.html"
+          }
+        },
+        {
+          "filename": "_themed_collection/umma.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "emoji": "art",
+            "layout": "links",
+            "maps_navigate": "University of Michigan Museum of Art, Ann Arbor, MI",
+            "redirect": "https://umma.umich.edu/",
+            "screenshot": true,
+            "title": "University of Michigan Museum of Art",
+            "wait": 50
+          }
+        },
+        {
+          "filename": "_themed_collection/matthaei.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "emoji": "deciduous_tree",
+            "layout": "links",
+            "maps_navigate": "Matthaei Botanical Gardens, Ann Arbor, MI",
+            "redirect": "https://mbgna.umich.edu/matthaei-botanical-gardens/conservatory/",
+            "screenshot": true,
+            "title": "Matthaei Botanical Gardens",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_themed_collection/comet.md",
+          "front_matter_data": {
+            "date": "1900-01-01 08:00:00 -0700",
+            "emoji": "coffee",
+            "layout": "links",
+            "maps_navigate": "Comet Coffee, Ann Arbor, MI",
+            "redirect": "https://www.facebook.com/cometcoffee/",
+            "screenshot": true,
+            "title": "Comet Coffee",
+            "wait": 5
+          }
+        },
+        {
+          "filename": "_themed_collection/mocad.md",
+          "front_matter_data": {
+            "date": "2022-12-09 08:00:00 -0700",
+            "emoji": "frame_with_picture",
+            "layout": "links",
+            "maps_navigate": "Museum of Contemporary Art, Detroit, MI",
+            "redirect": "https://mocadetroit.org/",
+            "screenshot": true,
+            "title": "Museum of Contemporary Art Detroit",
+            "wait": 5
+          }
+        }
+      ],
+      "script": "read_page_frontmatter",
+      "time": "2023-01-05T12:56:31.793633+00:00"
     }
   }
 }
