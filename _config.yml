@@ -30,14 +30,28 @@ exclude:
   - webapp
 
 collections:
+
+  # Just general bookmarks
+  bookmarks:
+    output: true
+    permalink: /:name
+
+  # Add items to the shopping list in Asana
   get:
     output: true
     permalink: /:collection/:name
 
+  # Google maps directions
+  go:
+    output: true
+    permalink: /go/:name
+
+  # URLs designed to be short enough for QR version 1 and/or longer-lived links like "1", "2" etc...
   tiny:
     output: true
     permalink: /:name
 
+  # Items that fit some sort of theme.
   themed_collection:
     output: true
     permalink: /th/:name
@@ -48,12 +62,15 @@ collections:
     output: true
     permalink: /pw/:name
 
+  # This is where the password redirect lands for Matt's password.
+  # This should be uncrawled / unindexed / not show up in any public view.
   private_matt:
-    # This is your standard simple password
+    # This is your standard simple password, Matt
     output: true
     #IMPORTANT: if you change the password, which changes the hash,
     #ALSO CHANGE THIS IN ROBOTS.TXT to avoid crawling of this directory.
     permalink: /43fc89395ef02296438e189c8aaacc0ab082199d9038e0705421229c667b42ce/:name
+
 
 
 permalink: none

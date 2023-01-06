@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- for collection in site.collections -%}
+    {%- unless collection.label contains 'private_' -%} 
+      <h2>{{collection.label}}</h2>
+      <ul class="post-list">
+        {%- assign sorted_items = collection.docs | sort: "url" -%}
+        {%- for item in sorted_items -%}
+        <li>
+          <h4>
+            <a class="post-link" href="{{ item.url | relative_url }}">
+              <span class="linkname" style="font-family: monospace">{{ item.url }}</span> => {{ item.title | escape }}
+            </a>
+          </h4>
+        </li>
+        {%- endfor -%}
+      </ul>
+    {%- endunless -%}
+  {%- endfor -%}
+
+</div>
