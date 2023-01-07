@@ -6,5 +6,6 @@ redirect: "http://example.com/path"
 wait: 5000
 offline_cache: true
 screenshot: true
+emoji: white_square_button
 ---
 

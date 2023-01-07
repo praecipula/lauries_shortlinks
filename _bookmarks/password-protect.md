@@ -4,5 +4,6 @@ date:   1900-01-01 08:00:00 -0700
 layout: links
 redirect: "https://www.agalera.eu/github-pages-password/"
 wait: 5
+emoji: lock_with_ink_pen
 ---
 

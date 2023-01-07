@@ -23,16 +23,16 @@ class App extends React.Component<any> {
       logoImage?: string
       ecLevel?: "H" | "M" | "L" | "Q";
     }
-    var optionalLogo : optionalComponentProps = {};
+    var optionalProps : optionalComponentProps = {};
     if (this.props.iconUrl != null) {
-      optionalLogo['logoImage'] = this.props.iconUrl;
+      optionalProps['logoImage'] = this.props.iconUrl;
     }
+    type errorCorrectionLevel = "H" | "M" | "L" | "Q";
+    var errorCorrection: errorCorrectionLevel = "H";
     if (this.props.errorCorrection != null) {
-      optionalLogo['ecLevel'] = this.props.errorCorrection;
-    } else {
-      optionalLogo['ecLevel'] = "H"; //The highest level
+      errorCorrection = this.props.errorCorrection;
     }
-    console.log(optionalLogo)
+    console.log(optionalProps)
     var component = <div style={{ height: "400px", width: '320px' }}>
                   <QRCode value={qrText}
                     size={300}
@@ -53,7 +53,10 @@ class App extends React.Component<any> {
                         outer: '#151515'
                       },
                       ]}
-                      {...optionalLogo}
+                    logoWidth={200}
+                    logoOpacity={0.4}
+                    ecLevel={errorCorrection}
+                      {...optionalProps}
                       />
                   <p style={{width: "100%", textAlign: "center", margin: "0", fontWeight: "700", overflowWrap:"break-word"}}>{qrText}</p>
                 </div>
