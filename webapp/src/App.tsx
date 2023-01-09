@@ -6,11 +6,11 @@ import { QRCode } from 'react-qrcode-logo';
 type iQRCCProps = {
   seedContent: string,
   contentUpdate: Function
+  renderDynamic: boolean
 }
 
 type iQRCCState = {
   content: string;
-  renderStatic: boolean
 }
 
 class QRCodeContent extends React.Component<iQRCCProps, iQRCCState> {
@@ -19,35 +19,42 @@ class QRCodeContent extends React.Component<iQRCCProps, iQRCCState> {
     super(props);
     this.state = {
       content: props.seedContent,
-      renderStatic: true
     }
+    console.log(this.props);
   }
 
   inputChanged(event: React.ChangeEvent<HTMLInputElement>) {
-    console.log("Input changed " + event.currentTarget.value);
     this.setState({content: event.currentTarget.value});
     this.props.contentUpdate(event.currentTarget.value);
   }
 
   render() {
     var codeText = <p>this.props.seedContent</p>
-    if (this.state.renderStatic) {
-      codeText = <p id="codeText" style={{width: "100%", textAlign: "center", margin: "0", fontWeight: "700", overflowWrap:"break-word"}}>{this.state.content}</p>
+    if (this.props.renderDynamic) {
+      codeText = <input type="text"
+        id="codeText"
+        name="codeText"
+        value={this.state.content}
+        onChange={event=>this.inputChanged(event)}
+        style={{width: "100%", textAlign: "center", margin: "0", fontWeight: "700", overflowWrap:"break-word"}}></input>
     } else {
-      codeText = <input type="text" id="codeText" name="codeText" value={this.state.content} onChange={event=>this.inputChanged(event)}></input>
+      codeText = <p id="codeText" style={{width: "100%", textAlign: "center", margin: "0", fontWeight: "700", overflowWrap:"break-word"}}>{this.state.content}</p>
     }
     return codeText
   }
 }
 
 type iAppProps = {
-  codeContent?: string,
-  iconUrl?: string,
-  errorCorrection?: "H" | "M" | "L" | "Q";
+  codeContent?: string,                     // Initial content for the qr code
+  iconUrl?: string,                         // Overlay icon from this location
+  errorCorrection?: "L" | "M" | "Q" | "H";  // Error correction for the qr code
+  renderDynamic?: "true" | "false";         // Whether the QR code is expected to change. (This will effectively render components to do so).
 }
 
 type iAppState = {
-  qrContent: string
+  qrContent: string                         // Actual content for the qr code. This can be dynamic.
+  renderDynamic: boolean                    // Whether to render the code as editable in the browser.
+  errorCorrection: "L" | "M" | "Q" | "H";   // Error correction level
 }
 
 class App extends React.Component<iAppProps, iAppState> {
@@ -55,12 +62,10 @@ class App extends React.Component<iAppProps, iAppState> {
 
   constructor(props: any) {
     super(props);
-    var potentialQrContent = document.location.href;
-    if (this.props.codeContent) {
-      potentialQrContent = this.props.codeContent;
-    }
     this.state = {
-      qrContent: potentialQrContent
+      qrContent: (this.props.codeContent === undefined) ? "" : this.props.codeContent,
+      renderDynamic: (this.props.renderDynamic === undefined) ? false : (this.props.renderDynamic === "true") ? true : false,
+      errorCorrection: (this.props.errorCorrection === undefined) ? "Q" : this.props.errorCorrection
     };
   }
 
@@ -111,7 +116,9 @@ class App extends React.Component<iAppProps, iAppState> {
                     ecLevel={errorCorrection}
                       {...optionalProps}
                       />
-                    <QRCodeContent seedContent={this.state.qrContent} contentUpdate={(newContent: string) => this.qrContentUpdated(newContent)} />
+                    <QRCodeContent seedContent={this.state.qrContent}
+                      contentUpdate={(newContent: string) => this.qrContentUpdated(newContent)}
+                      renderDynamic={this.state.renderDynamic}/>
                 </div>
     return (
       <div>
