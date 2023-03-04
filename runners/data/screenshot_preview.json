@@ -1,67 +1,5 @@
 {
   "_default": {
-    "87": {
-      "data": [
-        {
-          "page": "https://www.nstarlounge.com/",
-          "pass_until_routine_refresh": true
-        },
-        {
-          "page": "https://www.facebook.com/cometcoffee/",
-          "pass_until_routine_refresh": true
-        },
-        {
-          "page": "https://www.a2gov.org/departments/Parks-Recreation/parks-places/pages/birdhills.aspx",
-          "pass_until_routine_refresh": true
-        },
-        {
-          "page": "https://www.lancitynoodles.com/",
-          "pass_until_routine_refresh": true
-        },
-        {
-          "page": "https://mbgna.umich.edu/matthaei-botanical-gardens/conservatory/",
-          "pass_until_routine_refresh": true
-        },
-        {
-          "page": "https://fritabatidos.com/",
-          "pass_until_routine_refresh": true
-        },
-        {
-          "page": "https://mocadetroit.org/",
-          "pass_until_routine_refresh": true
-        },
-        {
-          "page": "https://bonbonbon.com/",
-          "pass_until_routine_refresh": true
-        },
-        {
-          "page": "https://twojames.com/",
-          "pass_until_routine_refresh": true
-        },
-        {
-          "page": "https://umma.umich.edu/",
-          "pass_until_routine_refresh": true
-        },
-        {
-          "page": "https://thelunchrooma2.com/detroit-street-filling-station-1",
-          "pass_until_routine_refresh": true
-        },
-        {
-          "page": "https://www.belleisleconservancy.org/",
-          "pass_until_routine_refresh": true
-        },
-        {
-          "page": "https://downtowndetroit.org/experience-downtown/things-to-do/",
-          "pass_until_routine_refresh": true
-        },
-        {
-          "page": "https://misskimannarbor.com/",
-          "pass_until_routine_refresh": true
-        }
-      ],
-      "script": "screenshot_preview",
-      "time": "2023-02-27T13:00:38.343395+00:00"
-    },
     "88": {
       "data": [
         {
@@ -309,6 +247,68 @@
       ],
       "script": "screenshot_preview",
       "time": "2023-03-03T12:57:07.291132+00:00"
+    },
+    "92": {
+      "data": [
+        {
+          "page": "https://www.nstarlounge.com/",
+          "pass_until_routine_refresh": true
+        },
+        {
+          "page": "https://www.facebook.com/cometcoffee/",
+          "pass_until_routine_refresh": true
+        },
+        {
+          "page": "https://www.a2gov.org/departments/Parks-Recreation/parks-places/pages/birdhills.aspx",
+          "pass_until_routine_refresh": true
+        },
+        {
+          "page": "https://www.lancitynoodles.com/",
+          "pass_until_routine_refresh": true
+        },
+        {
+          "page": "https://mbgna.umich.edu/matthaei-botanical-gardens/conservatory/",
+          "pass_until_routine_refresh": true
+        },
+        {
+          "page": "https://fritabatidos.com/",
+          "pass_until_routine_refresh": true
+        },
+        {
+          "page": "https://mocadetroit.org/",
+          "pass_until_routine_refresh": true
+        },
+        {
+          "page": "https://bonbonbon.com/",
+          "pass_until_routine_refresh": true
+        },
+        {
+          "page": "https://twojames.com/",
+          "pass_until_routine_refresh": true
+        },
+        {
+          "page": "https://umma.umich.edu/",
+          "pass_until_routine_refresh": true
+        },
+        {
+          "page": "https://thelunchrooma2.com/detroit-street-filling-station-1",
+          "pass_until_routine_refresh": true
+        },
+        {
+          "page": "https://www.belleisleconservancy.org/",
+          "pass_until_routine_refresh": true
+        },
+        {
+          "page": "https://downtowndetroit.org/experience-downtown/things-to-do/",
+          "pass_until_routine_refresh": true
+        },
+        {
+          "page": "https://misskimannarbor.com/",
+          "pass_until_routine_refresh": true
+        }
+      ],
+      "script": "screenshot_preview",
+      "time": "2023-03-04T12:54:45.460766+00:00"
     }
   }
 }
