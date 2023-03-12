@@ -2,5 +2,5 @@
 title:  "Wifi password"
 layout: qrcode_private
 emoji: signal_strength
-qrcode: "WIFI:S:phlogiston;T:WPA;P:disco=inferno;;"
+qrcode: "WIFI:S:Phlogiston;T:WPA;P:disco=inferno;;"
 ---
