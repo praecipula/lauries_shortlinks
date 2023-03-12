@@ -17,6 +17,9 @@ Koko
 Kochi kochi
 : less formal here; like "here kitty kitty"
 
+Kochi oide
+: less formal "come here", alternative "here kitty kitty"
+
 Suwaro
 : we shall sit
 
