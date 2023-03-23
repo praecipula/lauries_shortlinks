@@ -6,6 +6,7 @@ import os
 
 from google.oauth2 import service_account
 from google.cloud import storage
+from google.api_core.exceptions import NotFound
 import json
 
 
@@ -31,6 +32,3 @@ def download(blobname, destination_filepath):
 def list_blobs():
     return client.list_blobs(BUCKETNAME)
 
-upload("testfile.md", "./testfile.md")
-download("testfile.md", "./downloaded_testfile.md")
-print(list(list_blobs()))

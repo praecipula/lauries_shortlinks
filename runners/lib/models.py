@@ -3,6 +3,7 @@ import os
 
 import logging
 import python_logging_base
+import google_cloud_storage
 
 import sqlalchemy
 from sqlalchemy import Column, Integer, String, DateTime, ForeignKey
@@ -17,6 +18,23 @@ Base = declarative_base()
 class SqlLiteHandler:
 
     DBFILENAME="matt_dot_directory.sqlite"
+    FILEPATH="runners/data/" + DBFILENAME
+
+    @classmethod
+    def download(cls):
+        try:
+            google_cloud_storage.download(SqlLiteHandler.DBFILENAME, SqlLiteHandler.FILEPATH)
+        except google_cloud_storage.NotFound:
+            logger.warning("No database file found in GCStorage. The one on the filesystem, or a new one, will be used on initialize.")
+
+    @classmethod
+    def upload(cls):
+        try:
+            google_cloud_storage.upload(SqlLiteHandler.DBFILENAME, SqlLiteHandler.FILEPATH)
+        except:
+            logger.error("Failed to upload to GCStorage. The data from this run will be LOST.")
+            raise
+
 
     @classmethod
     def initialize(cls):
@@ -27,7 +45,7 @@ class SqlLiteHandler:
         # since we should always run all scripts with pwd = root of the repo.
         if not os.path.isdir("runners"):
             raise Exception("All scripts, especially ones that use data, need to run with `pwd` at the root of the repo")
-        cls._engine = sqlalchemy.create_engine("sqlite:///runners/data/" + cls.DBFILENAME)
+        cls._engine = sqlalchemy.create_engine("sqlite:///" + cls.FILEPATH)
         Session = sessionmaker()
         Session.configure(bind=cls._engine)
         cls._session = Session()
@@ -100,5 +118,7 @@ class Log(Base):
 
 if __name__ == "__main__":
     print("Well, runs")
+    SqlLiteHandler.download()
     SqlLiteHandler.initialize()
     Log.info("test", "I hope this works")
+    SqlLiteHandler.upload()

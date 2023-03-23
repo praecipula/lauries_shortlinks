@@ -8,3 +8,4 @@ node_modules
 webapp/build
 geckodriver.log
 *.sqlite
+runners/data/un_checked_in_google_credentials.json
