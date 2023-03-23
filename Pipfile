@@ -8,6 +8,8 @@ tinydb="*"
 pyyaml = "*"
 glom = "*"
 selenium = "*"
+google-api-python-client = "*"
+google-cloud-storage = "*"
 
 [dev-packages]
 
