@@ -3,24 +3,34 @@
 import logging
 import os
 
-BUCKETNAME="matt_dot_directory_storage"
 
 from google.oauth2 import service_account
 from google.cloud import storage
 import json
 
 
-CREDENTIALS=json.loads(os.environ['CREDENTIALS'])
-creds = service_account.Credentials.from_service_account_info(CREDENTIALS)
-client = storage.Client(project=CREDENTIALS["project_id"], credentials=creds)
+BUCKETNAME="matt_dot_directory_storage"
+CREDENTIAL_JSON=json.loads(os.environ['CREDENTIALS'])
 
+# Common module variables
+credentials = service_account.Credentials.from_service_account_info(CREDENTIAL_JSON)
+client = storage.Client(project=CREDENTIAL_JSON["project_id"], credentials=credentials)
 bucket = client.bucket(BUCKETNAME)
 
-testfilename = "testfile.md"
-testfilepath = "./" + testfilename
+def upload(blobname, filepath):
+    blob = bucket.blob(blobname)
+    blob.upload_from_filename(filepath)
+    print(f"Uploaded file to {blob.public_url}")
 
+def download(blobname, destination_filepath):
+    blob = bucket.blob(blobname)
+    blob.download_to_filename(destination_filepath)
+    filestat = os.stat(destination_filepath)
+    print(f"Downloaded {filestat.st_size} bytes to {destination_filepath}")
 
-with open(testfilepath, 'rb') as stream:
-    blob = bucket.blob(testfilename)
-    blob.upload_from_string(stream.read(), testfilename)
-    print(blob.public_url)
+def list_blobs():
+    return client.list_blobs(BUCKETNAME)
+
+upload("testfile.md", "./testfile.md")
+download("testfile.md", "./downloaded_testfile.md")
+print(list(list_blobs()))

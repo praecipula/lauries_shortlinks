@@ -10,6 +10,8 @@ glom = "*"
 selenium = "*"
 google-api-python-client = "*"
 google-cloud-storage = "*"
+sqlalchemy = "*"
+python-logging-base = {git = "https://github.com/praecipula/python_logging_base.git"}
 
 [dev-packages]
 
