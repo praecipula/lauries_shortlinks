@@ -107,6 +107,7 @@ class Log(Base):
     __tablename__ = "runlog"
     id = Column(Integer, primary_key=True)
     logsession_id = Column(Integer, ForeignKey("runlogsession.id"))
+    time_created = Column(DateTime(timezone=True), server_default=func.now())
     level = Column(String)
     name = Column(String)
     message = Column(String)
