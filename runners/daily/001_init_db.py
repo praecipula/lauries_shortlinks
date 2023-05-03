@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import sys
 sys.path.append('./runners/lib') if './runners/lib' not in sys.path else sys.path
 import models
