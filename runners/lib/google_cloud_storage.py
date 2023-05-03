@@ -11,7 +11,7 @@ import json
 
 
 BUCKETNAME="matt_dot_directory_storage"
-CREDENTIAL_JSON=json.loads(os.environ['CREDENTIALS'])
+CREDENTIAL_JSON=json.loads(os.environ['GOOGLE_CLOUD_CREDENTIALS'])
 
 # Common module variables
 credentials = service_account.Credentials.from_service_account_info(CREDENTIAL_JSON)
