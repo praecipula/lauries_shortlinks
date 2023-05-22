@@ -35,6 +35,11 @@ collections:
   bookmarks:
     output: true
     permalink: /:name
+  
+  # Links intended to be tiny (low error correction)
+  tiny:
+    output: true
+    permalink: /:name
 
 permalink: none
 
