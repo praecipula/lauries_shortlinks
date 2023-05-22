@@ -49,12 +49,14 @@ type iAppProps = {
   iconUrl?: string,                         // Overlay icon from this location
   errorCorrection?: "L" | "M" | "Q" | "H";  // Error correction for the qr code
   renderDynamic?: "true" | "false";         // Whether the QR code is expected to change. (This will effectively render components to do so).
+  style?: "plain" | "matt";                 // Whether the QR code is expected to change. (This will effectively render components to do so).
 }
 
 type iAppState = {
   qrContent: string                         // Actual content for the qr code. This can be dynamic.
   renderDynamic: boolean                    // Whether to render the code as editable in the browser.
   errorCorrection: "L" | "M" | "Q" | "H";   // Error correction level
+  style: "plain" | "matt";
 }
 
 class App extends React.Component<iAppProps, iAppState> {
@@ -65,7 +67,8 @@ class App extends React.Component<iAppProps, iAppState> {
     this.state = {
       qrContent: (this.props.codeContent === undefined) ? "" : this.props.codeContent,
       renderDynamic: (this.props.renderDynamic === undefined) ? false : (this.props.renderDynamic === "true") ? true : false,
-      errorCorrection: (this.props.errorCorrection === undefined) ? "Q" : this.props.errorCorrection
+      errorCorrection: (this.props.errorCorrection === undefined) ? "Q" : this.props.errorCorrection,
+      style: (this.props.style === undefined) ? "plain" : this.props.style
     };
   }
 
@@ -77,12 +80,30 @@ class App extends React.Component<iAppProps, iAppState> {
     console.log(this.props);
     type optionalComponentProps = {
       logoImage?: string
-      ecLevel?: "H" | "M" | "L" | "Q";
     }
     var optionalProps : optionalComponentProps = {};
     if (this.props.iconUrl != null) {
       optionalProps['logoImage'] = this.props.iconUrl;
     }
+
+    type styleProps = {
+      size : number
+      qrStyle : "squares" | "dots";
+      fgColor : string;
+      eyeRadius : number;
+      eyeColorInner: string;
+      eyeColorOuter: string;
+    }
+    var style : styleProps = {
+      size : 300,
+      qrStyle : "squares",
+      fgColor : "#000000",
+      eyeRadius : 0,
+      eyeColorInner: "#000000",
+      eyeColorOuter: "#000000"
+    };
+    //fgColor="#262664"
+
     type errorCorrectionLevel = "H" | "M" | "L" | "Q";
     var errorCorrection: errorCorrectionLevel = "H";
     if (this.props.errorCorrection != null) {
@@ -93,22 +114,22 @@ class App extends React.Component<iAppProps, iAppState> {
 
     var component = <div style={{ height: "400px", width: '320px' }}>
                   <QRCode value={this.state.qrContent}
-                    size={300}
-                    qrStyle="dots"
-                    fgColor="#262664"
+                    size={style.size}
+                    qrStyle={style.qrStyle}
+                    fgColor={style.fgColor}
                     eyeRadius={[
-                      [50, 0, 50, 0],
-                      [0, 50, 0, 50],
-                      [0, 50, 0, 50]]}
+                      [style.eyeRadius, 0, style.eyeRadius, 0],
+                      [0, style.eyeRadius, 0, style.eyeRadius],
+                      [0, style.eyeRadius, 0, style.eyeRadius]]}
                     eyeColor={[
-                      { inner: '#262664',
-                        outer: '#151515'
+                      { inner: style.eyeColorInner,
+                        outer: style.eyeColorOuter
                       },
-                      { inner: '#262664',
-                        outer: '#151515'
+                      { inner: style.eyeColorInner,
+                        outer: style.eyeColorOuter
                       },
-                      { inner: '#262664',
-                        outer: '#151515'
+                      { inner: style.eyeColorInner,
+                        outer: style.eyeColorOuter
                       },
                       ]}
                     logoWidth={200}
