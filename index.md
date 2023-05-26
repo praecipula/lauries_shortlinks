@@ -5,13 +5,14 @@
 layout: home
 ---
 
-To add or edit a link online:
+Welcome to Laurie's redirect site.
 
-Go to [https://github.com/praecipula/l/tree/main/_posts](https://github.com/praecipula/l/tree/main/_posts)
-Copy contents of "template.md"
-New file, call it YYYY-MM-DD-*shortname*.md
-Paste
-Edit
-Commit directly to main
+The purpose of this site is to handle page visits from elsewhere and then (usually immediately) redirect to the "real" location. This enables us to track link clicks, QR code scans, and so on.
 
-It takes a couple of minutes to deploy
+If you've found yourself on this page, you've landed here in error - this page isn't private but shouldn't be linked to from elsewhere online. If you are here and need assistance, please email [mailto:laurie@studiofivetwo.net](laurie@studiofivetwo.net) and we'll get you sorted out.
+
+Other locations you may be interested in:
+
+* [The page to generate any arbitrary QR code](/qr)
+
+* [Laurie's Linkedin profile](/me)
